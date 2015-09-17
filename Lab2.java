@@ -26,6 +26,8 @@ public class Lab2 {
 
 	int numKitsPerCat = 7;
 	
+	int numKits, numCats;
+	
 
 	int total;
 
@@ -40,7 +42,9 @@ public class Lab2 {
 	    // with the narrator.
 	    // Calculate the number going to St. Ives
 		
-	    total = numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat + 1 + 1;
+	    numKits = numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat;
+		numCats = numWives * numSacksPerWife * numCatsPerSack;
+		total = numKits + numCats + numWives + 2;
 	} else {
 	    // Otherwise, only the narrator is going!
 	    total = 1;
