@@ -18,7 +18,7 @@ public class Lab2 {
 	
 	boolean manGoingToStIves = true;
 
-	int numWives = 8;
+	int numWives = 7;
 
 	int numSacksPerWife = 7;
 	
@@ -26,7 +26,7 @@ public class Lab2 {
 
 	int numKitsPerCat = 7;
 	
-	int numKits, numCats;
+	int numKits, numCats, numSacks;
 	
 
 	int total;
@@ -44,7 +44,8 @@ public class Lab2 {
 		
 	    numKits = numWives * numSacksPerWife * numCatsPerSack * numKitsPerCat;
 		numCats = numWives * numSacksPerWife * numCatsPerSack;
-		total = numKits + numCats + numWives + 2;
+		numSacks = numWives * numSacksPerWife;
+		total = numKits + numCats + numWives + numSacks + 2 ;
 	} else {
 	    // Otherwise, only the narrator is going!
 	    total = 1;
